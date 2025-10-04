@@ -19,6 +19,5 @@
     "node-fetch": "^3.3.2",
     "nodemon": "^3.1.10",
     "openai": "^5.22.1"
-  },
-  "devDependencies": {}
+  }
 }
