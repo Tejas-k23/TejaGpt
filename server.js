@@ -7,9 +7,7 @@ import mongoose from"mongoose";
 import chatRoutes from "./Routes/chat.js";
 
 
-app.use(cors({
-  origin: "https://tejagptfrontend.onrender.com/" 
-}));
+
 
 
 const app = express();
@@ -27,6 +25,9 @@ app.use("/api",chatRoutes)
 // app.post("/test",async(req,res)=>{
   
 // })
+app.use(cors({
+  origin: "https://tejagptfrontend.onrender.com/" 
+}));
 const connectDB=async()=>{
     try{
         await mongoose.connect(process.env.MONGODB_URI);
