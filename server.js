@@ -5,7 +5,7 @@ import cors from "cors";
 import fetch from "node-fetch";
 import mongoose from"mongoose";
 import chatRoutes from "./Routes/chat.js";
-import cors from "cors";
+
 
 app.use(cors({
   origin: "https://tejagptfrontend.onrender.com/" 
